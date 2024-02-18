@@ -16,7 +16,7 @@ public class HomeController {
         this.repoService = repoService;
     }
 
-    @RequestMapping("/getAllRepos/{username}")
+    @RequestMapping("/repos/{username}")
     public List<Repo> getAllRepos(@PathVariable("username") String username) {
         return repoService.getAllRepos(username);
     }
