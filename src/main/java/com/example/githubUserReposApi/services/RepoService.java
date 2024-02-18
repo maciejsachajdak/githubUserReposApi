@@ -19,7 +19,7 @@ public class RepoService {
         for (int i = 0; i < jsonAllRepos.length(); i++) {
             JSONObject repo = jsonAllRepos.getJSONObject(i);
             boolean isFork = repo.getBoolean("fork");
-            if(!isFork){
+            if (!isFork) {
                 String repositoryName = repo.getString("name");
                 JSONObject ownerObject = repo.getJSONObject("owner");
                 String url = repo.getString("branches_url");
